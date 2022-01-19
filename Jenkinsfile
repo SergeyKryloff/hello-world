@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                python TestPy.py
+                sh python TestPy.py
             }
         }
         stage('Deploy') {
